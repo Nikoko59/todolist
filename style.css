@@ -1,0 +1,90 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    background: linear-gradient(295deg, #fd4a1d 0%, #fcb045 100%);
+    padding: 5rem;
+    min-height: 100vh;
+}
+
+
+#new-project {
+    font-size: 2.23rem; 
+    letter-spacing : 0.5rem; 
+    color : orange; 
+
+}
+
+
+.container{
+    background: #070142; 
+    width: 600px; 
+    margin: 0 auto;
+    border-radius:20px; 
+    text-align: center;
+    padding: 10px;
+
+}
+
+ul {
+ color:  white ;
+list-style-type: none;
+font-size: 1.4rem; 
+}
+
+form input{
+    
+width : 300px;
+padding: 6px;
+border-radius : 200px; 
+border: 3px solid orange ; 
+font-size: 0.9rem; 
+font-weight : 500; 
+
+ 
+}
+
+/*  class added "checked'  */
+
+ul li:before{
+    content:"*"; 
+    padding: 0.6rem;
+    font-size:1.3rem; 
+    color: red; 
+}
+
+ul li:after{
+    opacity : 0; 
+}
+
+
+ul li :hover:after{
+content:"(terminé)"; 
+opacity : 1; 
+font-size: 1rem; 
+color: rgb(255, 255, 255); 
+font-style: italic;
+animation : nico 1s forwards; 
+}
+
+
+li.checked:before{
+    content: " ✓ " ; 
+    padding: 10px 10px; 
+    font-size: 1rem; 
+    color: white; 
+
+    
+}
+
+li.checked:hover:after{
+    content:"(supprimer)"; 
+    font-size: 1rem; 
+    color : white; 
+    opacity:1 ; 
+}
+
+@keyframes nico {
+    to {
+   opacity : 1; 
+    }
+ 
+}
